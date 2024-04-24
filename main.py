@@ -286,13 +286,14 @@ def run():
     if not available_files:
         click.secho("No files found in the output folder.", fg='yellow')
     else:
-        click.secho("Which file would you like to summarize:", fg='cyan')
+        click.secho("Which file would you like to summarize (If you picked option 1, it would end with _Sorted.xlsx):", fg='cyan')
         for idx, file_name in enumerate(available_files, start=1):
             click.echo(f"[{idx}] {file_name}")
         file_choice = click.prompt("Enter the number corresponding to your choice", type=int)
         if 1 <= file_choice <= len(available_files):
             chosen_file = os.path.join(output_folder, available_files[file_choice - 1])
             click.secho(f"Summarizing file: {chosen_file}", fg='cyan')
+            
 
             # Find errors and view them within the screen:
             # Define a list of symbols that are not elements
@@ -647,8 +648,6 @@ def run():
                 # Print a message to confirm the files have been saved
                 click.echo(f"Filtered entries saved to: {filtered_file}")
                 click.echo(f"Removed entries saved to: {removed_file}")
-
-
 
 
 @main.command()
