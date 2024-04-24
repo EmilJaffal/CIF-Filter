@@ -21,7 +21,7 @@ Navigate to the project directory: Enter the following command to move into the 
 cd CIF-Filter
 ```
 
-and run with
+and run with excel files or a folder of CIF files in your directory with
 
 ```bash
 python main.py run
