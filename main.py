@@ -128,7 +128,8 @@ def run():
 
         click.secho("Available CIF folders:", fg='cyan')
         for idx, folder in enumerate(cif_folders, start=len(excel_sheets)+1):
-            click.echo(f"[{idx}] {folder}")
+            if not folder.endswith('.git'):
+                click.echo(f"[{idx}] {folder}")
 
         choice = click.prompt("Enter the number corresponding to your choice", type=int)
 
