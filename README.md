@@ -21,23 +21,23 @@ Navigate to the project directory: Enter the following command to move into the 
 cd CIF-Filter
 ```
 
-and run with excel files or a folder of CIF files in your directory with
+and run with Excel files or a folder of CIF files in your directory with
 
 ```bash
 python main.py run
 ```
 
 ### Option 2: Download ZIP
-Download ZIP: Click on the "Code" button on the repository page and select "Download ZIP".
-Extract the ZIP file: Once the download is complete, extract the contents of the ZIP file to your desired location.
+- Download ZIP: Click the "Code" button on the repository page and select "Download ZIP".
+- Extract the ZIP file: Once the download is complete, extract the ZIP file's contents to your desired location.
 
 ## Requirements
-Python 3.x
+- Python 3.x
 
 ## Contributors
-Dr. Anton Oliynyk 
-Sangjoon Bob Lee
-Emil Jaffal
+- Dr. Anton Oliynyk
+- Sangjoon Bob Lee
+- Emil Jaffal
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
