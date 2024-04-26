@@ -13,12 +13,9 @@ def element_prevalence(
     log_scale=False,
     ptable_fig=True,
 ):
-    desktop_path = os.path.expanduser(
-        "~/Desktop"
-    )  # Get the path to the desktop
-    ptable_path = os.path.join(
-        desktop_path, "ptable.csv"
-    )  # Create the full path to ptable.csv
+    current_dir = os.path.dirname(os.path.abspath(__file__))  
+    cif_filter_dir = os.path.dirname(current_dir)  
+    ptable_path = os.path.join(cif_filter_dir, "ptable.csv") 
 
     ptable = pd.read_csv(ptable_path)
     ptable.index = ptable["symbol"].values
