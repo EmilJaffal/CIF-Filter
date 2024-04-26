@@ -15,6 +15,6 @@ def dataframe_to_dict(results, elements):
 
     # Iterate through DataFrame rows and update the counts
     for index, row in results.iterrows():
-        d[row['Element']] = row['# Element']
+        d[row["Element"]] = row["# Element"]
 
     return d
