@@ -5,7 +5,6 @@ import matplotlib.patches as patches
 from matplotlib import cm
 from matplotlib.colors import Normalize
 
-
 # Define the element_prevalence function
 def element_prevalence(
     elem_tracker,

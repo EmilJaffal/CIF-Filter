@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import click
 
-
 def process_cif_folder(folder_path):
     """
     Process data from a folder containing CIF files
@@ -42,6 +41,5 @@ def process_cif_folder(folder_path):
                                 )
                             break  # Break the loop after finding the formula
 
-    # Create a DataFrame from the lists
     data = pd.DataFrame({"Entry": entries, "Formula": formulas})
     return data

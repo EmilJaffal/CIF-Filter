@@ -1,4 +1,3 @@
-# Function to parse the formula and extract elements
 def parse_formula1(formula):
     elements_list = []
     counts_list = []
