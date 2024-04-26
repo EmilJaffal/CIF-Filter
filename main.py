@@ -11,18 +11,12 @@ from util import (
     element_prevalence,
 )
 
-@click.group()
+@click.command()
 def main():
     """
     Main function to run the script
     """
-    pass
-
-@main.command()
-def run():
-    """
-    Run the main script
-    """
+ 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     available_files = os.listdir(script_dir)
 
